@@ -2,10 +2,15 @@
 function valider(){
     var val1 = +document.getElementById('input1').value;
     var val2 = +document.getElementById('input2').value;
-    if (Number.isNaN(val1)){
+    if (Number.isNaN(val1)){ 
+        document.getElementById('bouton').style.display = 'none'
         window.alert("La valeur saisie n'est pas un nombre");
-    }else if(Number.isNaN(val2)){
+    }else if(Number.isNaN(val2)){ 
+        document.getElementById('bouton').style.display = 'none'
         window.alert("La valeur saisie n'est pas un nombre");
+    }
+    else{
+        document.getElementById('bouton').style.display = 'block'
     }
 }
 
@@ -17,13 +22,5 @@ function additionne(){
     }else{
         window.alert("Veuillez remplir les champs avec des valeurs numériques");
     }
-}
-
-var ms = document.querySelectorAll('input')
-for(var i = 0; i < ms.length; i++){
-    var m = ms[i];
-    m.addEventListener('change', function () {
-        this.nextElementSibling.classList.add('btn-visible')
-    })
 }
 

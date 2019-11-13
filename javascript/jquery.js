@@ -12,11 +12,14 @@ $(document).ready(function(){
 
     $('#input1').change(function(){
         if(!$.isNumeric($('#input1').val())){
+            $('#bouton').hide();
             window.alert("La valeur saisie n'est pas numérique");
         }
     })
+    
     $('#input2').change(function(){
         if(!$.isNumeric($('#input2').val())){
+            $('#bouton').hide();
             window.alert("La valeur saisie n'est pas numérique");
         }
     })
