@@ -1,22 +1,29 @@
 INSERT INTO ju_personne
-VALUES (JU_SEQ_PERSONNE.nextval, 'TOUAKOASSE', 'juvenal',  657836095,  'juvenal@gmail.com',  'medecin chirurgien');
+VALUES (JU_SEQ_PERSONNE.nextval, 'TOUAKOASSE', 'juvenal',  657836095,  'juvenal@gmail.com',  'medecin chirurgien'); commit;
 
 INSERT INTO ju_rendezvous
-VALUES (JU_SEQ_RENDEZVOUS.nextval, '22.11.2019', '25.11.2019',  'Moyen',  'Consultation');
+VALUES (JU_SEQ_RENDEZVOUS.nextval, '22.11.2019', '25.11.2019',  'Moyen',  'Consultation'); commit;
 
 INSERT INTO ju_ordonnance
-VALUES (JU_SEQ_ORDONNANCE.nextval, '22.11.2019',  'Doliprane', '1 tous les 24h',  'Par la bouche',  'A prendre quand il y a les mots de tete');
+VALUES (JU_SEQ_ORDONNANCE.nextval, '22.11.2019',  'Doliprane', '1 tous les 24h',  'Par la bouche',  'A prendre quand il y a les mots de tete'); commit;
 
 INSERT INTO ju_examen
-VALUES (JU_SEQ_EXAMEN.nextval, 'Examen de palu',  2000);
+VALUES (JU_SEQ_EXAMEN.nextval, 'Examen de palu',  2000); commit;
 
 INSERT INTO ju_facture
-VALUES (JU_SEQ_FACTURE.nextval, '22.11.2019',  0,  2000, 2000);
+VALUES (JU_SEQ_FACTURE.nextval, '22.11.2019',  0,  2000, 2000); commit;
 
 INSERT INTO ju_patient
 VALUES (JU_SEQ_PATIENT.nextval, '22.11.2019',  '07.05.2010', 'M', 'A+', 'Celibataire sans enfant',  
-JU_SEQ_ORDONNANCE.CURRVAL,  JU_SEQ_EXAMEN.CURRVAL, JU_SEQ_RENDEZVOUS.CURRVAL, JU_SEQ_FACTURE.CURRVAL);
+JU_SEQ_ORDONNANCE.CURRVAL,  JU_SEQ_EXAMEN.CURRVAL, JU_SEQ_RENDEZVOUS.CURRVAL, JU_SEQ_FACTURE.CURRVAL); commit;
 
 INSERT INTO ju_medecin
 VALUES (JU_SEQ_MEDECIN.nextval, 'Chirurgien',
-JU_SEQ_ORDONNANCE.CURRVAL,  JU_SEQ_EXAMEN.CURRVAL, JU_SEQ_PATIENT.CURRVAL, JU_SEQ_RENDEZVOUS.CURRVAL);
+JU_SEQ_ORDONNANCE.CURRVAL,  JU_SEQ_EXAMEN.CURRVAL, JU_SEQ_PATIENT.CURRVAL, JU_SEQ_RENDEZVOUS.CURRVAL); commit;
+
+INSERT INTO ju_pavillon
+VALUES (JU_SEQ_PAVILLON.nextval, 'Pavillon des blessé', 'Blesse moins grave',
+ JU_SEQ_PATIENT.CURRVAL); commit;
+
+INSERT INTO ju_salle
+VALUES (JU_SEQ_SALLE.nextval, 5); commit;

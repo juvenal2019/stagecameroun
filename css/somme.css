@@ -1,0 +1,50 @@
+.cs-header{
+    text-align: center;
+    width: auto;
+    height: 150px;
+    padding: 50px;
+    background: antiquewhite;
+    font-size: 50px;
+}
+
+.cs-footer{
+    margin-top: 160px;
+    background: gray;
+    height: 50px;
+    padding: 20px;
+}
+
+.cs-row-body{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 50px;
+    column-gap: 12px;
+    text-align: center;
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.element-input{
+    height: 45px;
+    color: green;
+    border-radius: 20px;
+    border: 1px solid;
+}
+
+.cs-result{
+    padding: 45px;
+    margin-right: 25%;
+    margin-left: 25%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+button{
+    padding: 15px;
+    background: green;
+    border: 0px!important;
+    color: white;
+    font-weight: 900px;
+    font-size: 15px;
+}
